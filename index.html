@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="garupan-app is fan site." />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="src/index.css" rel="stylesheet" />
+    <title>garupan-app</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root" class="container">
+      <div class="row">
+        <div class="col">
+          <h1>マシンガン道</h1>
+        </div>
+      </div>
+
+      <div class="row pb-4">
+        <div class="col">
+          <h2>隊長</h2>
+          <select id="captain-skill" class="form-select" aria-label="隊長に設定する生徒を選択">
+            <option value="1" data-rate="0.44" data-description="自部隊に火災発生&装填UP（超）">★5 ノンナ［水着2021］ （スキル解放前） </option>
+            <option value="1" data-rate="0.33" data-description="自部隊に火災発生&火力&装填UP（超）">★5 ノンナ［水着2021］ （スキル解放後） </option>
+          </select>
+          <span class="small mark"></span>
+        </div>
+      </div>
+
+      <div class="row pb-4">
+        <div class="col">
+          <h2>常時発動生徒</h2>
+          <select id="continuous-skill" class="form-select" aria-label="常時発動スキルを持った生徒を選択">
+            <option value="1" data-rate="0.56" data-description="水辺適性付与&試合中の総移動距離が短い程火力&照準UP&装填UP&味方車輌の車長【島田 愛里寿】で火力&照準&装填UP&試合開始時に自車輌に火災発生（常時発動）">★5 島田 千代［水着2021］ （スキル解放後）</option>
+            <option value="2" data-rate="0.42" data-description="攻撃範囲変化&味方隊長車と離れている程火力&機動性&照準&移動力&装填UP&味方生存車輌が3輌以上の間火力&照準&装填UP&試合中相手部隊の車輌数が少ないほど相手部隊の装甲&機動性DOWN（常時発動）">★5 島田 愛里寿［V-day2022］ （スキル解放後）</option>
+            <option value="3" data-rate="0.56" data-description="全地形適性付与&味方フラッグ車と離れている程装甲&機動性&照準&移動力&装填UP&試合中の総移動距離が長い程機動性&移動力&装填UP&試合開始時弱点攻撃（最大3ターン継続）（常時発動）">西住 まほ［5周年］ （スキル解放後）</option>
+          </select>
+          <span class="small mark"></span>
+        </div>
+      </div>
+      
+      <div class="row pb-4">
+        <div class="col">
+          <h2>結果</h2>
+          <span id="result"></span>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="src/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
